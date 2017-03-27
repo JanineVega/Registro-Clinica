@@ -11,24 +11,300 @@
   </style>
 </head>
 <body>
+  <header>
+    <h1>FICHA DE PACIENTES</h1>
+  </header>
   <form id="formulario" class="" action="index.html" method="post">
     <div>
       <label for="">Nombre</label> <br>
-      <input id="nombre" type="text" name="" value=""> <br> <br>
-      <label for="">Apellido</label> <br>
-      <input id="apellido" type="text" name="" value=""> <br> <br>
+      <input id="nombre" type="text" class="input-registro" value="" placeholder="Ingese su nombre"><br>
+        <span class="errormensaje"></span><br>
+
+      <label for="">Apellido</label><br>
+      <input id="apellido" type="text" class="input-registro" value="" placeholder="Ingrese su apellido"> <br>
+      <span class="errormensaje"></span><br>
+
       <label for="">Edad</label> <br>
-      <input id="edad" type="text" name="" value=""> <br> <br>
-      <label for="">Genero</label> <br>
-      <input id="genero" type="text" name="" value=""> <br> <br>
+      <input id="edad" type="text" class="input-registro" value="" placeholder="Ingrese su edad"><br>
+      <span class="errormensaje"></span><br>
+
+      <label for="">Género</label> <br>
+      <select id="genero"class="" name="">
+        <option hidden>Seleccionar Genero</option>
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Masculino</option>
+      </select>
+      <span class="errormensaje"></span><br><br>
+
       <label for="">Ciudad</label> <br>
-      <input id="ciudad" type="text" name="" value=""> <br> <br>
+      <input id="ciudad" type="text" name="" value="" placeholder="Ingrese su ciudad"> <br>
+
+      <span id="input-ciudad"class=""></span><br>
       <label for="">Pais</label> <br>
-      <input id="pais" type="text" name="" value=""> <br> <br>
+      <select id="country"class="" name="">
+        <option hidden>Selecciona tu pais...</option>
+          <option value="af">Afganistán</option>
+					<option value="al">Albania (Shqipëri)</option>
+					<option value="de">Alemania (Deutschland)</option>
+					<option value="ad">Andorra</option>
+					<option value="ao">Angola</option>
+					<option value="ai">Anguila (Anguilla)</option>
+					<option value="aq">Antártida (Antarctica)</option>
+					<option value="ag">Antigua y Barbuda</option>
+					<option value="sa">Arabia Saudí</option>
+					<option value="dz">Argelia</option>
+					<option value="ar">Argentina</option>
+					<option value="am">Armenia (Հայաստան)</option>
+					<option value="aw">Aruba</option>
+					<option value="au">Australia</option>
+					<option value="at">Austria (Österreich)</option>
+					<option value="az">Azerbaiyán (Azərbaycan)</option>
+					<option value="bs">Bahamas</option>
+					<option value="bd">Bangladés (বাংলাদেশ)</option>
+					<option value="bb">Barbados</option>
+					<option value="bh">Baréin (&#8235;البحرين&#8236;&lrm;)</option>
+					<option value="be">Bélgica (België)</option>
+					<option value="bz">Belice (Belize)</option>
+					<option value="bj">Benín (Bénin)</option>
+					<option value="bm">Bermudas (Bermuda)</option>
+					<option value="by">Bielorrusia (Беларусь)</option>
+					<option value="bo">Bolivia</option>
+					<option value="ba">Bosnia y Herzegovina</option>
+					<option value="bw">Botsuana (Botswana)</option>
+					<option value="br">Brasil</option>
+					<option value="bn">Brunéi (Brunei)</option>
+					<option value="bg">Bulgaria (България)</option>
+					<option value="bf">Burkina Faso</option>
+					<option value="bi">Burundi (Uburundi)</option>
+					<option value="bt">Bután (འབྲུག)</option>
+					<option value="cv">Cabo Verde (Kabu Verdi)</option>
+					<option value="kh">Camboya (កម្ពុជា)</option>
+					<option value="cm">Camerún (Cameroun)</option>
+					<option value="ca">Canadá (Canada)</option>
+					<option value="bq">Caribe neerlandés (Caribbean Netherlands)</option>
+					<option value="qa">Catar (&#8235;قطر&#8236;&lrm;)</option>
+					<option value="ea">Ceuta y Melilla</option>
+					<option value="td">Chad (Tchad)</option>
+					<option value="cl">Chile</option>
+					<option value="cn">China (中国)</option>
+					<option value="cy">Chipre (Κύπρος)</option>
+					<option value="va">Ciudad del Vaticano (Città del Vaticano)</option>
+					<option value="co">Colombia</option>
+					<option value="km">Comoras (&#8235;جزر القمر&#8236;&lrm;)</option>
+					<option value="kp">Corea del Norte (조선 민주주의 인민 공화국)</option>
+					<option value="kr">Corea del Sur (대한민국)</option>
+					<option value="ci">Costa de Marfil (Côte d’Ivoire)</option>
+					<option value="cr">Costa Rica</option>
+					<option value="hr">Croacia (Hrvatska)</option>
+					<option value="cu">Cuba</option>
+					<option value="cw">Curazao (Curaçao)</option>
+					<option value="dg">Diego García (Diego Garcia)</option>
+					<option value="dk">Dinamarca (Danmark)</option>
+					<option value="dm">Dominica</option>
+					<option value="ec">Ecuador</option>
+					<option value="eg">Egipto (&#8235;مصر&#8236;&lrm;)</option>
+					<option value="sv">El Salvador</option>
+					<option value="ae">Emiratos Árabes Unidos</option>
+					<option value="er">Eritrea</option>
+					<option value="sk">Eslovaquia (Slovensko)</option>
+					<option value="si">Eslovenia (Slovenija)</option>
+					<option value="es">España</option>
+					<option value="us">Estados Unidos (United States)</option>
+					<option value="ee">Estonia (Eesti)</option>
+					<option value="et">Etiopía (Ethiopia)</option>
+					<option value="ph">Filipinas (Philippines)</option>
+					<option value="fi">Finlandia (Suomi)</option>
+					<option value="fj">Fiyi (Fiji)</option>
+					<option value="fr">Francia (France)</option>
+					<option value="ga">Gabón (Gabon)</option>
+					<option value="gm">Gambia</option>
+					<option value="ge">Georgia (საქართველო)</option>
+					<option value="gh">Ghana (Gaana)</option>
+					<option value="gi">Gibraltar</option>
+					<option value="gd">Granada (Grenada)</option>
+					<option value="gr">Grecia (Ελλάδα)</option>
+					<option value="gl">Groenlandia (Kalaallit Nunaat)</option>
+					<option value="gp">Guadalupe (Guadeloupe)</option>
+					<option value="gu">Guam</option>
+					<option value="gt">Guatemala</option>
+					<option value="gf">Guayana Francesa (Guyane française)</option>
+					<option value="gg">Guernesey (Guernsey)</option>
+					<option value="gn">Guinea (Guinée)</option>
+					<option value="gw">Guinea-Bisáu (Guiné Bissau)</option>
+					<option value="gq">Guinea Ecuatorial</option>
+					<option value="gy">Guyana</option>
+					<option value="ht">Haití (Haiti)</option>
+					<option value="hn">Honduras</option>
+					<option value="hk">Hong Kong (香港)</option>
+					<option value="hu">Hungría (Magyarország)</option>
+					<option value="in">India (भारत)</option>
+					<option value="id">Indonesia</option>
+					<option value="ir">Irán (&#8235;ایران&#8236;&lrm;)</option>
+					<option value="iq">Iraq (&#8235;العراق&#8236;&lrm;)</option>
+					<option value="ie">Irlanda (Ireland)</option>
+					<option value="bv">Isla Bouvet (Bouvet Island)</option>
+					<option value="cx">Isla Christmas (Christmas Island)</option>
+					<option value="cp">Isla Clipperton (Clipperton Island)</option>
+					<option value="ac">Isla de la Ascensión (Ascension Island)</option>
+					<option value="im">Isla de Man (Isle of Man)</option>
+					<option value="is">Islandia (Ísland)</option>
+					<option value="nu">Isla Niue (Niue)</option>
+					<option value="nf">Isla Norfolk (Norfolk Island)</option>
+					<option value="ax">Islas Åland (Åland)</option>
+					<option value="ky">Islas Caimán (Cayman Islands)</option>
+					<option value="ic">islas Canarias</option>
+					<option value="cc">Islas Cocos (Kepulauan Cocos (Keeling))</option>
+					<option value="ck">Islas Cook (Cook Islands)</option>
+					<option value="fo">Islas Feroe (Føroyar)</option>
+					<option value="gs">Islas Georgia del Sur y Sandwich del Sur</option>
+					<option value="hm">Islas Heard y McDonald (Heard &amp; McDonald Islands)</option>
+					<option value="fk">Islas Malvinas (Falkland Islands (Islas Malvinas))</option>
+					<option value="mp">Islas Marianas del Norte (Northern Mariana Islands)</option>
+					<option value="mh">Islas Marshall (Marshall Islands)</option>
+					<option value="um">Islas menores alejadas de EE. UU. (U.S. Outlying Islands)</option>
+					<option value="pn">Islas Pitcairn (Pitcairn Islands)</option>
+					<option value="sb">Islas Salomón (Solomon Islands)</option>
+					<option value="tc">Islas Turcas y Caicos (Turks and Caicos Islands)</option>
+					<option value="vg">Islas Vírgenes Británicas (British Virgin Islands)</option>
+					<option value="vi">Islas Vírgenes de EE. UU. (U.S. Virgin Islands)</option>
+					<option value="il">Israel (&#8235;ישראל&#8236;&lrm;)</option>
+					<option value="it">Italia</option>
+					<option value="jm">Jamaica</option>
+					<option value="jp">Japón (日本)</option>
+					<option value="je">Jersey</option>
+					<option value="jo">Jordania (&#8235;الأردن&#8236;&lrm;)</option>
+					<option value="kz">Kazajistán (Казахстан)</option>
+					<option value="ke">Kenia (Kenya)</option>
+					<option value="kg">Kirguistán (Кыргызстан)</option>
+					<option value="ki">Kiribati</option>
+					<option value="xk">Kosovo (Kosovë)</option>
+					<option value="kw">Kuwait (&#8235;الكويت&#8236;&lrm;)</option>
+					<option value="la">Laos (ລາວ)</option>
+					<option value="ls">Lesoto (Lesotho)</option>
+					<option value="lv">Letonia (Latvija)</option>
+					<option value="lb">Líbano (&#8235;لبنان&#8236;&lrm;)</option>
+					<option value="lr">Liberia</option>
+					<option value="ly">Libia (&#8235;ليبيا&#8236;&lrm;)</option>
+					<option value="li">Liechtenstein</option>
+					<option value="lt">Lituania (Lietuva)</option>
+					<option value="lu">Luxemburgo (Luxembourg)</option>
+					<option value="mo">Macao (澳門)</option>
+					<option value="mk">Macedonia (Македонија)</option>
+					<option value="mg">Madagascar (Madagasikara)</option>
+					<option value="my">Malasia (Malaysia)</option>
+					<option value="mw">Malaui (Malawi)</option>
+					<option value="mv">Maldivas (Maldives)</option>
+					<option value="ml">Mali</option>
+					<option value="mt">Malta</option>
+					<option value="ma">Marruecos (&#8235;المغرب&#8236;&lrm;)</option>
+					<option value="mq">Martinica (Martinique)</option>
+					<option value="mu">Mauricio (Moris)</option>
+					<option value="mr">Mauritania (&#8235;موريتانيا&#8236;&lrm;)</option>
+					<option value="yt">Mayotte</option>
+					<option value="mx">México</option>
+					<option value="fm">Micronesia</option>
+					<option value="md">Moldavia (Republica Moldova)</option>
+					<option value="mc">Mónaco (Monaco)</option>
+					<option value="mn">Mongolia (Монгол)</option>
+					<option value="me">Montenegro (Crna Gora)</option>
+					<option value="ms">Montserrat</option>
+					<option value="mz">Mozambique (Moçambique)</option>
+					<option value="mm">Myanmar (Birmania) (မြန်မာ)</option>
+					<option value="na">Namibia (Namibië)</option>
+					<option value="nr">Nauru</option>
+					<option value="np">Nepal (नेपाल)</option>
+					<option value="ni">Nicaragua</option>
+					<option value="ne">Níger (Nijar)</option>
+					<option value="ng">Nigeria</option>
+					<option value="no">Noruega (Norge)</option>
+					<option value="nc">Nueva Caledonia (Nouvelle-Calédonie)</option>
+					<option value="nz">Nueva Zelanda (New Zealand)</option>
+					<option value="om">Omán (&#8235;عُمان&#8236;&lrm;)</option>
+					<option value="nl">Países Bajos (Nederland)</option>
+					<option value="pk">Pakistán (&#8235;پاکستان&#8236;&lrm;)</option>
+					<option value="pw">Palau</option>
+					<option value="ps">Palestina (&#8235;فلسطين&#8236;&lrm;)</option>
+					<option value="pa">Panamá</option>
+					<option value="pg">Papúa Nueva Guinea (Papua New Guinea)</option>
+					<option value="py">Paraguay</option>
+					<option value="pe">Perú</option>
+					<option value="pf">Polinesia Francesa (Polynésie française)</option>
+					<option value="pl">Polonia (Polska)</option>
+					<option value="pt">Portugal</option>
+					<option value="pr">Puerto Rico</option>
+					<option value="gb">Reino Unido (United Kingdom)</option>
+					<option value="cf">República Centroafricana (République centrafricaine)</option>
+					<option value="cz">República Checa (Česká republika)</option>
+					<option value="cg">República del Congo (Congo-Brazzaville)</option>
+					<option value="cd">República Democrática del Congo</option>
+					<option value="do">República Dominicana</option>
+					<option value="re">Reunión (La Réunion)</option>
+					<option value="rw">Ruanda (Rwanda)</option>
+					<option value="ro">Rumanía (România)</option>
+					<option value="ru">Rusia (Россия)</option>
+					<option value="eh">Sáhara Occidental</option>
+					<option value="ws">Samoa</option>
+					<option value="as">Samoa Americana (American Samoa)</option>
+					<option value="bl">San Bartolomé (Saint-Barthélemy)</option>
+					<option value="kn">San Cristóbal y Nieves (Saint Kitts and Nevis)</option>
+					<option value="sm">San Marino</option>
+					<option value="mf">San Martín (Saint-Martin (partie française))</option>
+					<option value="pm">San Pedro y Miquelón (Saint-Pierre-et-Miquelon)</option>
+					<option value="sh">Santa Elena (Saint Helena)</option>
+					<option value="lc">Santa Lucía (Saint Lucia)</option>
+					<option value="st">Santo Tomé y Príncipe (São Tomé e Príncipe)</option>
+					<option value="vc">San Vicente y las Granadinas (St. Vincent &amp; Grenadines)</option>
+					<option value="sn">Senegal (Sénégal)</option>
+					<option value="rs">Serbia (Србија)</option>
+					<option value="sc">Seychelles</option>
+					<option value="sl">Sierra Leona (Sierra Leone)</option>
+					<option value="sg">Singapur (Singapore)</option>
+					<option value="sx">Sint Maarten</option>
+					<option value="sy">Siria (&#8235;سوريا&#8236;&lrm;)</option>
+					<option value="so">Somalia (Soomaaliya)</option>
+					<option value="lk">Sri Lanka (ශ්&zwj;රී ලංකාව)</option>
+					<option value="sz">Suazilandia (Swaziland)</option>
+					<option value="za">Sudáfrica (South Africa)</option>
+					<option value="sd">Sudán (&#8235;السودان&#8236;&lrm;)</option>
+					<option value="ss">Sudán del Sur (&#8235;جنوب السودان&#8236;&lrm;)</option>
+					<option value="se">Suecia (Sverige)</option>
+					<option value="ch">Suiza (Schweiz)</option>
+					<option value="sr">Surinam (Suriname)</option>
+					<option value="sj">Svalbard y Jan Mayen (Svalbard og Jan Mayen)</option>
+					<option value="th">Tailandia (ไทย)</option>
+					<option value="tw">Taiwán (台灣)</option>
+					<option value="tz">Tanzania</option>
+					<option value="tj">Tayikistán (Tajikistan)</option>
+					<option value="io">Territorio Británico del Océano Índico (British Indian Ocean Territory)</option>
+					<option value="tf">Territorios Australes Franceses (Terres australes françaises)</option>
+					<option value="tl">Timor Oriental (Timor-Leste)</option>
+					<option value="tg">Togo</option>
+					<option value="tk">Tokelau</option>
+					<option value="to">Tonga</option>
+					<option value="tt">Trinidad y Tobago (Trinidad and Tobago)</option>
+					<option value="ta">Tristán da Cunha (Tristan da Cunha)</option>
+					<option value="tn">Túnez (&#8235;تونس&#8236;&lrm;)</option>
+					<option value="tm">Turkmenistán (Turkmenistan)</option>
+					<option value="tr">Turquía (Türkiye)</option>
+					<option value="tv">Tuvalu</option>
+					<option value="ua">Ucrania (Україна)</option>
+					<option value="ug">Uganda</option>
+					<option value="uy">Uruguay</option>
+					<option value="uz">Uzbekistán (Oʻzbekiston)</option>
+					<option value="vu">Vanuatu</option>
+					<option value="ve">Venezuela</option>
+					<option value="vn">Vietnam (Việt Nam)</option>
+					<option value="wf">Wallis y Futuna (Wallis and Futuna)</option>
+					<option value="ye">Yemen (&#8235;اليمن&#8236;&lrm;)</option>
+					<option value="dj">Yibuti (Djibouti)</option>
+					<option value="zm">Zambia</option>
+					<option value="zw">Zimbabue (Zimbabwe)</option>
+		  </select> <br><br>
+
     </div>
     <input id="enviar" type="button" name="" value="Enviar">
-    <div id="contenedor"></div>
   </form>
+  <div id="contenedor"></div>
   <script src="assets\js\app.js" type="text/javascript">
 
   </script>

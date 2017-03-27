@@ -7,3 +7,22 @@
 .un-paciente p {
 	margin: 3px 0 ;
 }
+ body{
+	 text-align: center;
+	 padding-top: 50px;
+	 font-family: sans-serif;
+ }
+
+ form{
+	 display: inline-block;
+	 text-align: left;
+ }
+
+ button{
+	 margin: 10 auto 0 auto;
+	 display: block;
+ }
+
+.errormensaje{
+	color: #f44;
+}
