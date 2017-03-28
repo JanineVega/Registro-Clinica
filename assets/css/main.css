@@ -26,3 +26,10 @@
 .errormensaje{
 	color: #f44;
 }
+
+.presentacio{
+	text-align:center;
+	padding-top: 50px;
+	font-family: sans-serif;
+	border: 1px solid black;
+}

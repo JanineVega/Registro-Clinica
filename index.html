@@ -17,32 +17,31 @@
   <form id="formulario" class="" action="index.html" method="post">
     <div>
       <label for="">Nombre</label> <br>
-      <input id="nombre" type="text" class="input-registro" value="" placeholder="Ingese su nombre"><br>
-        <span class="errormensaje"></span><br>
-
+      <input id="nombre" type="text" class="input-registro" value="" placeholder="Ingese su nombre">
+      <br>
+      <span class="errormensaje"></span>
+      <br>
       <label for="">Apellido</label><br>
       <input id="apellido" type="text" class="input-registro" value="" placeholder="Ingrese su apellido"> <br>
-      <span class="errormensaje"></span><br>
-
+      <span class="errormensaje"></span>
+      <br>
       <label for="">Edad</label> <br>
-      <input id="edad" type="text" class="input-registro" value="" placeholder="Ingrese su edad"><br>
+      <input id="edad" type="number" class="input-registro"  placeholder="Ingrese su edad">
+      <br>
       <span class="errormensaje"></span><br>
 
-      <label for="">Género</label> <br>
-      <select id="genero"class="" name="">
-        <option hidden>Seleccionar Genero</option>
+      <label for="" >Género</label> <br>
+      <select id="genero" class="input-registro" name="">
+        <option value="" hidden>Seleccionar Genero</option>
         <option value="femenino">Femenino</option>
         <option value="masculino">Masculino</option>
       </select>
+      <br>
       <span class="errormensaje"></span><br><br>
 
-      <label for="">Ciudad</label> <br>
-      <input id="ciudad" type="text" name="" value="" placeholder="Ingrese su ciudad"> <br>
-
-      <span id="input-ciudad"class=""></span><br>
       <label for="">Pais</label> <br>
-      <select id="country"class="" name="">
-        <option hidden>Selecciona tu pais...</option>
+      <select id="country" class="input-registro" name="">
+        <option value="" hidden>Selecciona tu pais...</option>
           <option value="af">Afganistán</option>
 					<option value="al">Albania (Shqipëri)</option>
 					<option value="de">Alemania (Deutschland)</option>
@@ -299,7 +298,61 @@
 					<option value="dj">Yibuti (Djibouti)</option>
 					<option value="zm">Zambia</option>
 					<option value="zw">Zimbabue (Zimbabwe)</option>
-		  </select> <br><br>
+		  </select>
+      <br>
+      <span class="errormensaje"></span><br>
+
+      <label  for="">Departamento</label> <br>
+      <select id="departamento" class="input-registro">
+        <option value="" hidden>Seleccione Departamento</option>
+        <option value="01">AMAZONAS</option>
+  			<option value="02">ANCASH</option>
+  			<option value="03">APURIMAC</option>
+  			<option value="04">AREQUIPA</option>
+  			<option value="05">AYACUCHO</option>
+  			<option value="06">CAJAMARCA</option>
+  			<option value="08">CUSCO</option>
+  			<option value="09">HUANCAVELICA</option>
+  			<option value="10">HUANUCO</option>
+  			<option value="11">ICA</option>
+  			<option value="12">JUNIN</option>
+  			<option value="13">LA LIBERTAD</option>
+  			<option value="14">LAMBAYEQUE</option>
+  			<option value="Lima">LIMA</option>
+  			<option value="16">LORETO</option>
+  			<option value="17">MADRE DE DIOS</option>
+  			<option value="18">MOQUEGUA</option>
+  			<option value="19">PASCO</option>
+  			<option value="20">PIURA</option>
+  			<option value="07">PROV. CONST. DEL CALLAO</option>
+  			<option value="21">PUNO</option>
+  			<option value="22">SAN MARTIN</option>
+  			<option value="23">TACNA</option>
+  			<option value="24">TUMBES</option>
+  			<option value="25">UCAYALI</option>
+      </select><br>
+      <span class="errormensaje"></span><br>
+
+      <label for="">Distrito</label>
+      <select class="" name="">
+        <option value="0" hidden="">(Seleccione Provincia)</option>
+  			<option value="1501">LIMA</option>
+  			<option value="1502">BARRANCA</option>
+  			<option value="1503">CAJATAMBO</option>
+  			<option value="1504">CANTA</option>
+  			<option value="1505">CAÑETE</option>
+  			<option value="1506">HUARAL</option>
+  			<option value="1507">HUAROCHIRI</option>
+  			<option value="1508">HUAURA</option>
+  			<option value="1509">OYON</option>
+  			<option value="1510">YAUYOS</option>
+      </select><br>
+      <span class="errormensaje"></span><br>
+
+      <label for="">Provincia</label>
+      <select class="" name="">
+
+      </select>
 
     </div>
     <input id="enviar" type="button" name="" value="Enviar">
